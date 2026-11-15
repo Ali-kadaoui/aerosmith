@@ -1,0 +1,20 @@
+{
+  "west": 136,
+  "north": -3.5,
+  "width": 352,
+  "height": 288,
+  "samples_per_degree": 128,
+  "radius_m": 3396000,
+  "nodata": -32768,
+  "source_id": "mola-dem",
+  "vertical_datum": "GMM3 areoid",
+  "source_rows": [
+    448,
+    735
+  ],
+  "source_columns": [
+    5888,
+    6239
+  ],
+  "sha256": "92b60f2feddfcd855f8218e5bbbdd9bb8a4dcee4cda6bcfa6a5e35a274743ab1"
+}
