@@ -1,23 +1,14 @@
-# 🚀 Aerosmith MEOS (Mars Exploration Operations System)
+# Aerosmith MEOS (Mars Exploration Operations System)
 
-[![NASA Space Apps Challenge](https://img.shields.io/badge/NASA%20Space%20Apps-Challenge-orange.svg)](https://www.spaceappschallenge.org/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
-[![React + Vite](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB.svg)](https://vitejs.dev/)
-[![Three.js](https://img.shields.io/badge/3D-Three.js-black.svg)](https://threejs.org/)
+A Mars mission planning and surface exploration dashboard created for the NASA Space Apps Challenge. The project combines real NASA orbital imagery, spherical A* traverse routing over elevation rasters, an interactive 3D Mars globe, and an AI mission assistant.
 
-An interactive Mars exploration mission console built for the **NASA Space Apps Challenge**. Features orbital imagery, spherical A* traverse route planning over real elevation data, an interactive 3D Mars globe, and an AI mission assistant.
-
----
-
-## ⚡ Quick Start (Run Locally)
+## Quick Start
 
 ### Prerequisites
-- **Python 3.12+**
-- **Node.js 20+** & **npm**
+- Python 3.12+
+- Node.js 20+ and npm
 
----
-
-### 1. ⚙️ Backend (FastAPI)
+### 1. Backend (FastAPI)
 
 ```bash
 cd backend
@@ -31,48 +22,38 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8018 --reload
 ```
-> API & Swagger docs: [http://127.0.0.1:8018/docs](http://127.0.0.1:8018/docs)
 
----
+The API and interactive docs will run at http://127.0.0.1:8018/docs.
 
-### 2. 🖥️ Frontend (React + Vite)
+### 2. Frontend (React + Vite)
 
-In a second terminal:
+In a separate terminal:
 
 ```bash
 cd frontend
 npm install
 npm run dev -- --port 5188
 ```
-> Open in browser: [http://127.0.0.1:5188](http://127.0.0.1:5188)
 
----
+Open your browser at http://127.0.0.1:5188.
 
-## 🌟 Key Features
+## Key Features
 
-- 🪐 **Interactive 3D Mars Globe**: Oblate spheroid Mars globe with Viking, MOLA, CTX, and HRSC orbital layers in Three.js.
-- 🗺️ **NASA Trek 2D Map**: Interactive equirectangular tile matrices directly from NASA PDS/Trek with real rover telemetry.
-- 🧭 **Spherical A\* Pathfinding**: Multi-strategy surface traverse optimization over MOLA (~463m) and HiRISE (~1m) elevation grids.
-- 🤖 **AEROSMITH AI Assistant**: Gemini-powered tactical copilot with live spatial and mission context.
-- 📋 **Mission Manifest Export**: One-click export of reproducible route plans with elevation checksums.
+- **Interactive 3D Mars Globe**: Oblate spheroid Mars globe built with Three.js, supporting Viking, MOLA, CTX, and HRSC orbital layers.
+- **NASA Trek 2D Map**: Equirectangular tile layers directly from NASA PDS/Trek with real Curiosity and Perseverance telemetry.
+- **Spherical A* Pathfinding**: Surface route planning and slope hazard evaluation using Gale Crater MOLA (~463m) and HiRISE (~1m) elevation grids.
+- **Mission Assistant**: Interactive Gemini-powered copilot with live spatial and mission context.
+- **Manifest Export**: Export reproducible mission plans with elevation checksums and data provenance.
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-├── backend/            # FastAPI REST API & Spherical A* route engine
-│   ├── app/            # Endpoints, algorithms, terrain loaders & Gemini AI
-│   └── tests/          # Pytest validation suite
-├── frontend/           # React 18 + TypeScript + Vite UI
-│   ├── src/            # Map, 3D Globe, Itinerary & AI components
-│   └── public/         # Mars textures, raster datasets & rover photos
-├── data/               # Bundled MOLA & HiRISE DEM crops + NASA metadata
-├── docs/               # Scientific assumptions, data sources & architecture
-└── scripts/            # Planetary raster processing & launch utilities
+backend/       FastAPI REST API, spherical A* router, and Gemini assistant
+frontend/      React + TypeScript UI, Three.js 3D globe, and OpenLayers map
+data/          Bundled Gale Crater MOLA/HiRISE elevation grids and metadata
+docs/          Scientific assumptions, data sources, and architecture notes
+scripts/       Data conversion, contour generation, and local run scripts
 ```
 
----
-
-## 📜 License
-MIT © Team Aerosmith - NASA Space Apps Challenge
+## License
+MIT - Team Aerosmith (NASA Space Apps Challenge)
