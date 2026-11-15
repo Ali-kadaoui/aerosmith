@@ -1,0 +1,317 @@
+[
+  {
+    "id": "usgs-4453",
+    "name": "Olympus Mons",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 18.65,
+      "lon": 226.2
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/4453"
+  },
+  {
+    "id": "usgs-6288",
+    "name": "Valles Marineris",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": -14.01,
+      "lon": 301.41
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/6288"
+  },
+  {
+    "id": "usgs-2432",
+    "name": "Hellas Planitia",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": -42.43,
+      "lon": 70.5
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/2432"
+  },
+  {
+    "id": "usgs-2071",
+    "name": "Gale Crater",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Gale Crater",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": -5.37,
+      "lon": 137.81
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/2071"
+  },
+  {
+    "id": "usgs-14300",
+    "name": "Jezero Crater",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Jezero Crater",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 18.41,
+      "lon": 77.69
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/14300"
+  },
+  {
+    "id": "usgs-1783",
+    "name": "Elysium Mons",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 25.02,
+      "lon": 147.21
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/1783"
+  },
+  {
+    "id": "usgs-6260",
+    "name": "Utopia Planitia",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 46.74,
+      "lon": 117.52
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/6260"
+  },
+  {
+    "id": "usgs-417",
+    "name": "Ascraeus Mons",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 11.92,
+      "lon": 255.92
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/417"
+  },
+  {
+    "id": "usgs-4620",
+    "name": "Pavonis Mons",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 1.48,
+      "lon": 247.04
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/4620"
+  },
+  {
+    "id": "usgs-394",
+    "name": "Arsia Mons",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": -8.26,
+      "lon": 239.91
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/394"
+  },
+  {
+    "id": "usgs-371",
+    "name": "Argyre Planitia",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": -49.84,
+      "lon": 316.69
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/371"
+  },
+  {
+    "id": "usgs-2735",
+    "name": "Isidis Planitia",
+    "subtitle": "USGS Gazetteer",
+    "category": "Landmark",
+    "mission": "Mars cartography",
+    "region": "Mars",
+    "description": "Published geographic center of the named Martian feature.",
+    "coordinate": {
+      "lat": 13.94,
+      "lon": 88.38
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/2735"
+  },
+  {
+    "id": "viking-1",
+    "name": "Viking 1",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Viking 1",
+    "region": "Chryse Planitia",
+    "description": "Landing site \u00b7 mission ended in Chryse Planitia.",
+    "coordinate": {
+      "lat": 22.27,
+      "lon": 312.05
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "viking-2",
+    "name": "Viking 2",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Viking 2",
+    "region": "Utopia Planitia",
+    "description": "Landing site \u00b7 mission ended in Utopia Planitia.",
+    "coordinate": {
+      "lat": 48.27,
+      "lon": 134.28
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "pathfinder",
+    "name": "Pathfinder",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Pathfinder",
+    "region": "Ares Vallis",
+    "description": "Landing site \u00b7 mission ended in Ares Vallis.",
+    "coordinate": {
+      "lat": 19.47,
+      "lon": 326.75
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "spirit",
+    "name": "Spirit",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Spirit",
+    "region": "Gusev Crater",
+    "description": "Landing site \u00b7 mission ended in Gusev Crater.",
+    "coordinate": {
+      "lat": -14.57,
+      "lon": 175.48
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "opportunity",
+    "name": "Opportunity",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Opportunity",
+    "region": "Meridiani Planum",
+    "description": "Landing site \u00b7 mission ended in Meridiani Planum.",
+    "coordinate": {
+      "lat": -1.95,
+      "lon": 354.47
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "phoenix",
+    "name": "Phoenix",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "Phoenix",
+    "region": "Vastitas Borealis",
+    "description": "Landing site \u00b7 mission ended in Vastitas Borealis.",
+    "coordinate": {
+      "lat": 68.22,
+      "lon": 234.25
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "insight",
+    "name": "InSight",
+    "subtitle": "Landing site \u00b7 mission ended",
+    "category": "Landing site",
+    "mission": "InSight",
+    "region": "Elysium Planitia",
+    "description": "Landing site \u00b7 mission ended in Elysium Planitia.",
+    "coordinate": {
+      "lat": 4.5,
+      "lon": 135.62
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "zhurong",
+    "name": "Zhurong",
+    "subtitle": "Landing site \u00b7 archived position",
+    "category": "Landing site",
+    "mission": "Zhurong",
+    "region": "Utopia Planitia",
+    "description": "Landing site \u00b7 archived position in Utopia Planitia.",
+    "coordinate": {
+      "lat": 25.07,
+      "lon": 109.93
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  },
+  {
+    "id": "schiaparelli",
+    "name": "Schiaparelli",
+    "subtitle": "ExoMars 2016 impact site",
+    "category": "Impact site",
+    "mission": "Schiaparelli",
+    "region": "Meridiani Planum",
+    "description": "ExoMars 2016 impact site in Meridiani Planum.",
+    "coordinate": {
+      "lat": -2.07,
+      "lon": 353.79
+    },
+    "accuracy": "Published reference coordinate. Marker is shown at the source precision.",
+    "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html"
+  }
+]

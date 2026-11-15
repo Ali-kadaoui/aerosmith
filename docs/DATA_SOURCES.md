@@ -1,0 +1,35 @@
+# Data sources
+
+| Product | Access and coverage | Credits and use |
+|---|---|---|
+| [NASA Mars Trek](https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars) | Archival tiles delivered over WMTS. The app uses global MGS MOLA color relief, the global ESA HRSC/MOLA blend, MOLA multiscale roughness and the regional MRO CTX Gale mosaic. | NASA/JPL, NASA MGS MOLA Team, ESA/DLR/FU Berlin and MSSS as credited per product in the registry. Tiles are display layers. |
+| [NASA PDS MOLA MEGDR](https://pds-geosciences.wustl.edu/missions/mgs/megdr.html) | Archived MGS 128 px/degree topography tile MEGT00N090HB, covering 90–180°E and 0–44°S. The app bundles a pixel-aligned crop covering 136–138.75°E and 3.5–5.75°S. | NASA GSFC MGS MOLA Team and PDS Geosciences Node. The data use signed big-endian 16-bit meters above the GMM3 areoid. |
+| [USGS Astrogeology maps](https://astrogeology-usgs.hub.arcgis.com/pages/interactive-maps-mars) and [foundational Mars inventory](https://fdp.astrogeology.usgs.gov/fdp/mars/) | Dataset discovery and cross-checks. The USGS inventory lists downloadable IMG, cube and GeoTIFF products and WMS where available. Projection and coverage vary by product. | USGS Astrogeology Science Center. This build directly consumes geographic feature references from the USGS planetary nomenclature gazetteer. |
+| [2019 proposed Curiosity path](https://science.nasa.gov/photojournal/curiositys-proposed-path-up-mount-sharp/) | Photojournal offers JPEG, TIFF and animated GIF of a historical proposal. Used as a credited gallery illustration. | NASA/JPL-Caltech/ESA/Univ. of Arizona/JHUAPL/MSSS/USGS. Route coordinates are not derived from the published image. |
+| [NASA Worldview](https://worldview.earthdata.nasa.gov/) | Earth observation layer-browser reference. | NASA Earthdata. Used for interface inspiration. |
+| [Perseverance raw images](https://mars.nasa.gov/mars2020/multimedia/raw-images/) | JavaScript mission image browser. The gallery uses an independently sourced NASA/JPL published mosaic with catalogued camera, sol and capture date. | NASA/JPL-Caltech/ASU/MSSS. Jezero context only. |
+| [Curiosity boxwork](https://science.nasa.gov/photojournal/curiositys-first-360-degree-view-of-boxwork-patterns/) and [Gediz Vallis](https://science.nasa.gov/resource/curiosity-takes-a-360-degree-view-of-gediz-vallis-channel/) | Published Mastcam mosaics. The app bundles reduced previews and links to the original observation pages. | NASA/JPL-Caltech/MSSS. Dates and sols are stored in the local catalogue. |
+
+## WMTS grid and coverage
+
+The archived GetCapabilities files are stored beside the generated registry in `data/metadata`. All four configured layers use the advertised `default028mm` grid. Their origin is −180°, +90° and the base matrix is 2 × 1 tiles of 256 pixels. Each next matrix doubles both dimensions. The capabilities advertise `urn:ogc:def:crs:EPSG::104905`. The app uses explicit east-positive longitude and planetocentric latitude on an equirectangular grid.
+
+MOLA color relief is JPEG at levels 0–7. The 200 m HRSC/MOLA color relief is JPEG at levels 0–8. CTX is PNG at levels 0–12 and is confined to its declared Gale bounds. Its source imagery is about 6 m/pixel. The roughness composite is PNG at levels 0–1, with an original scale of 8 px/degree. The map can resample imagery past maximum tile level, with no gain in source detail.
+
+Rebuild the layer registry with `python3 scripts/inspect_mars_sources.py`. To rebuild the terrain extract, obtain the original PDS tile and run `python3 scripts/import_mola.py megt00n090hb.img`. The bundled crop was extracted from the PDS byte range 10321920–16957439 inclusive, verified by a matching Content-Range. To reproduce from that subrange, use `--first-row 448`. The host’s trust store rejected the archive certificate during the original acquisition, so the public PDS data were retrieved with certificate verification disabled for that download. That setting is absent from the app and importer. The crop checksum is recorded in `data/processed/gale-mola.json`.
+
+Original data and imagery retain their source credits. Consult each source for redistribution terms and any third-party restrictions.
+
+## Shared globe layers and features
+
+- [Viking color mosaic](https://astrogeology.usgs.gov/search/map/mars-viking-global-products) uses the NASA Trek colorized MDIM 2.1 product. Levels 3 and 4 provide the bundled 4096 × 2048 and 8192 × 4096 globe textures. The 2D view uses the verified WMTS grid. The mosaic is colorized.
+- [Global MOLA MEGDR](https://pds-geosciences.wustl.edu/missions/mgs/megdr.html), product MEGT90N000EB, supplies the globe's global elevation tint and tangent-space normal map. The signed 16-bit source has 5760 × 2880 samples. The globe builder rotates its longitude origin to −180°, resamples to 4096 × 2048 and computes Sobel gradients with local latitude-dependent ground spacing. The global display raster is independent of the existing Gale EVA DEM.
+- [USGS SIM 3292](https://pubs.usgs.gov/sim/3292/) supplies the 1:20M [Global_Geology polygons and published palette](https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3). The globe builder rasterizes the source Robinson polygons with a 2.5 km geometry simplification and resamples the display into equirectangular coordinates. The same PNG serves both views.
+- [USGS planetary nomenclature](https://planetarynames.wr.usgs.gov/Page/MARS/target) supplies the 12 landmark centers. [NASA GISS Mars24](https://www.giss.nasa.gov/tools/mars24/help/landers.html) and the NASA landing reports supply the spacecraft references. Schiaparelli is marked as an impact site.
+- [NASA/JPL MMGIS Curiosity linework](https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_traverse.json) and [MMGIS waypoints](https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json) supply the archived traverse and displayed sol range. The app preserves linework without a curve through unobserved positions. Waypoint beads are a display sample. The snapshot covers published waypoints from Sol 3 to Sol 5073 as retrieved on 2026-11-14.
+
+The regional CTX globe layer is a level-8 detail patch over global HRSC relief. The interactive 2D CTX layer streams deeper levels where available. The HRSC, MOLA relief and roughness globe textures are also frozen WMTS snapshots. All texture paths are project-local.
+
+To regenerate these assets, install NumPy, Pillow and pyproj. Run `python scripts/build_globe_rasters.py --mola megt90n000eb.img --geology features.json layer.json --tiles`. Fetch geology metadata with `?f=pjson` on the service above and polygons with `/query?f=json&where=1%3D1&outFields=*&maxAllowableOffset=2500&resultRecordCount=2000`. Save the Gazetteer Mars search page and the two MMGIS source JSON files for `scripts/import_globe_features.py`.
+
+The PDS host presented a certificate that the local trust store could not validate during acquisition of the global DEM. The archive was retrieved with a one-time curl verification override. The app and raster builder do not change TLS verification.

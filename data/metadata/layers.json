@@ -1,0 +1,762 @@
+[
+  {
+    "id": "viking",
+    "name": "Viking color mosaic",
+    "source": "NASA Mars Trek",
+    "status": "available",
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/WMTSCapabilities.xml",
+    "coverage": "Global Mars",
+    "bounds": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "crs": "urn:ogc:def:crs:EPSG::104905",
+    "resolution": "232 m source",
+    "description": "USGS colorized Viking Orbiter MDIM 2.1 mosaic.",
+    "attribution": "NASA/USGS Astrogeology",
+    "layer": "Mars_Viking_MDIM21_ClrMosaic_global_232m",
+    "matrixSet": "default028mm",
+    "format": "image/jpeg",
+    "template": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+    "matrices": [
+      {
+        "id": "0",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 279227636.2980747
+      },
+      {
+        "id": "1",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 139613818.14903736
+      },
+      {
+        "id": "2",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          8,
+          4
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 69806909.07451868
+      },
+      {
+        "id": "3",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          16,
+          8
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 34903454.53725934
+      },
+      {
+        "id": "4",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          32,
+          16
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 17451727.26862967
+      },
+      {
+        "id": "5",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          64,
+          32
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 8725863.634314835
+      },
+      {
+        "id": "6",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          128,
+          64
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 4362931.817157418
+      },
+      {
+        "id": "7",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          256,
+          128
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 2181465.908578709
+      }
+    ]
+  },
+  {
+    "id": "mola",
+    "name": "MOLA color relief",
+    "source": "NASA Mars Trek",
+    "status": "available",
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml",
+    "coverage": "Global Mars",
+    "bounds": [
+      -180.0,
+      -89.9991635,
+      179.9983271,
+      90.0
+    ],
+    "crs": "urn:ogc:def:crs:EPSG::104905",
+    "resolution": "463 m",
+    "description": "Colorized terrain relief from Mars Global Surveyor laser altimetry.",
+    "attribution": "NASA/JPL-Caltech, MGS MOLA Team",
+    "layer": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+    "matrixSet": "default028mm",
+    "format": "image/jpeg",
+    "template": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+    "matrices": [
+      {
+        "id": "0",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 279227636.2980747
+      },
+      {
+        "id": "1",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 139613818.14903736
+      },
+      {
+        "id": "2",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          8,
+          4
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 69806909.07451868
+      },
+      {
+        "id": "3",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          16,
+          8
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 34903454.53725934
+      },
+      {
+        "id": "4",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          32,
+          16
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 17451727.26862967
+      },
+      {
+        "id": "5",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          64,
+          32
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 8725863.634314835
+      },
+      {
+        "id": "6",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          128,
+          64
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 4362931.817157418
+      },
+      {
+        "id": "7",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          256,
+          128
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 2181465.908578709
+      }
+    ]
+  },
+  {
+    "id": "ctx",
+    "name": "Gale CTX mosaic",
+    "source": "NASA Mars Trek",
+    "status": "available",
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/WMTSCapabilities.xml",
+    "coverage": "Gale Crater",
+    "bounds": [
+      135.1842593,
+      -6.5732988,
+      139.2413012,
+      -2.8077809
+    ],
+    "crs": "urn:ogc:def:crs:EPSG::104905",
+    "resolution": "6 m",
+    "description": "Regional grayscale orbital mosaic from the Mars Reconnaissance Orbiter Context Camera.",
+    "attribution": "NASA/JPL-Caltech/MSSS",
+    "layer": "Gale_CTX_BlockAdj_dd",
+    "matrixSet": "default028mm",
+    "format": "image/png",
+    "template": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+    "matrices": [
+      {
+        "id": "0",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 279227636.2980747
+      },
+      {
+        "id": "1",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 139613818.14903736
+      },
+      {
+        "id": "2",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          8,
+          4
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 69806909.07451868
+      },
+      {
+        "id": "3",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          16,
+          8
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 34903454.53725934
+      },
+      {
+        "id": "4",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          32,
+          16
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 17451727.26862967
+      },
+      {
+        "id": "5",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          64,
+          32
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 8725863.634314835
+      },
+      {
+        "id": "6",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          128,
+          64
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 4362931.817157418
+      },
+      {
+        "id": "7",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          256,
+          128
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 2181465.908578709
+      },
+      {
+        "id": "8",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          512,
+          256
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 1090732.9542893544
+      },
+      {
+        "id": "9",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          1024,
+          512
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 545366.4771446772
+      },
+      {
+        "id": "10",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2048,
+          1024
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 272683.2385723386
+      },
+      {
+        "id": "11",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4096,
+          2048
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 136341.6192861693
+      },
+      {
+        "id": "12",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          8192,
+          4096
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 68170.80964308465
+      }
+    ]
+  },
+  {
+    "id": "hrsc",
+    "name": "HRSC/MOLA relief",
+    "source": "NASA Mars Trek",
+    "status": "available",
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw/1.0.0/WMTSCapabilities.xml",
+    "coverage": "Global Mars",
+    "bounds": [
+      -180.0,
+      -89.999224,
+      179.9984479,
+      90.0
+    ],
+    "crs": "urn:ogc:def:crs:EPSG::104905",
+    "resolution": "200 m grid",
+    "description": "Color relief from the Mars Express stereo camera and MGS MOLA elevation blend.",
+    "attribution": "ESA/DLR/FU Berlin, NASA/MGS MOLA Team",
+    "layer": "Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw",
+    "matrixSet": "default028mm",
+    "format": "image/jpeg",
+    "template": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw/1.0.0/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+    "matrices": [
+      {
+        "id": "0",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 279227636.2980747
+      },
+      {
+        "id": "1",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 139613818.14903736
+      },
+      {
+        "id": "2",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          8,
+          4
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 69806909.07451868
+      },
+      {
+        "id": "3",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          16,
+          8
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 34903454.53725934
+      },
+      {
+        "id": "4",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          32,
+          16
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 17451727.26862967
+      },
+      {
+        "id": "5",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          64,
+          32
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 8725863.634314835
+      },
+      {
+        "id": "6",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          128,
+          64
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 4362931.817157418
+      },
+      {
+        "id": "7",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          256,
+          128
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 2181465.908578709
+      },
+      {
+        "id": "8",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          512,
+          256
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 1090732.9542893544
+      }
+    ]
+  },
+  {
+    "id": "roughness",
+    "name": "MOLA roughness",
+    "source": "NASA Mars Trek",
+    "status": "available",
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/1.0.0/WMTSCapabilities.xml",
+    "coverage": "Global Mars",
+    "bounds": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "crs": "urn:ogc:def:crs:EPSG::104905",
+    "resolution": "8 pixels/degree",
+    "description": "RGB composite of roughness at 9.2, 2.4 and 0.6 km baselines.",
+    "attribution": "NASA/MGS MOLA Team, Kreslavsky and Head",
+    "layer": "mola_roughness",
+    "matrixSet": "default028mm",
+    "format": "image/png",
+    "template": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/1.0.0/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+    "matrices": [
+      {
+        "id": "0",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 279227636.2980747
+      },
+      {
+        "id": "1",
+        "origin": [
+          -180.0,
+          90.0
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "tileSize": [
+          256,
+          256
+        ],
+        "scaleDenominator": 139613818.14903736
+      }
+    ]
+  }
+]

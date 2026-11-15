@@ -1,0 +1,98 @@
+[
+  {
+    "id": "usgs",
+    "name": "USGS Astrogeology interactive Mars maps",
+    "source": "USGS",
+    "status": "reference",
+    "coverage": "Mars",
+    "crs": "Varies by product",
+    "resolution": "Varies by product",
+    "attribution": "USGS Astrogeology Science Center",
+    "description": "Planetary mapping catalogue and discovery portal.",
+    "url": "https://astrogeology-usgs.hub.arcgis.com/pages/interactive-maps-mars"
+  },
+  {
+    "id": "path",
+    "name": "Proposed Curiosity path (2019)",
+    "source": "NASA Photojournal",
+    "status": "reference",
+    "coverage": "Lower Mount Sharp",
+    "crs": "Published illustration",
+    "resolution": "Publication image",
+    "attribution": "NASA/JPL-Caltech/ESA/Univ. of Arizona/JHUAPL/MSSS/USGS",
+    "description": "Published stills and animation for historical science context.",
+    "url": "https://science.nasa.gov/photojournal/curiositys-proposed-path-up-mount-sharp/"
+  },
+  {
+    "id": "worldview",
+    "name": "NASA Worldview",
+    "source": "NASA Earthdata",
+    "status": "reference",
+    "coverage": "Earth",
+    "crs": "Varies by product",
+    "resolution": "Varies by product",
+    "attribution": "NASA EOSDIS",
+    "description": "Reference for layer controls and scientific visualization.",
+    "url": "https://worldview.earthdata.nasa.gov/"
+  },
+  {
+    "id": "raw2020",
+    "name": "Perseverance raw images",
+    "source": "NASA Mars 2020",
+    "status": "reference",
+    "coverage": "Jezero Crater",
+    "crs": "Camera frames",
+    "resolution": "Varies by camera",
+    "attribution": "NASA/JPL-Caltech",
+    "description": "Public mission image browser. The app gallery uses published NASA/JPL observations.",
+    "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+  },
+  {
+    "id": "radiation",
+    "name": "Radiation",
+    "source": "MSL RAD",
+    "status": "unavailable",
+    "coverage": "Rover observations",
+    "crs": "Unconfigured",
+    "resolution": "Unconfigured",
+    "attribution": "NASA/JPL-Caltech and RAD team",
+    "description": "The rover instrument records observations along the mission traverse. Regional radiation coverage is unavailable in this app.",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/science-instruments/rad/"
+  },
+  {
+    "id": "crism",
+    "name": "CRISM hydration",
+    "source": "NASA MRO CRISM",
+    "status": "unavailable",
+    "coverage": "Targeted observations",
+    "crs": "Unconfigured",
+    "resolution": "Unconfigured",
+    "attribution": "NASA/JPL-Caltech/JHUAPL",
+    "description": "No verified registered hydration mosaic is configured.",
+    "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/"
+  },
+  {
+    "id": "dust",
+    "name": "Dust storm risk",
+    "source": "NASA Mars observations",
+    "status": "unavailable",
+    "coverage": "Unconfigured",
+    "crs": "Unconfigured",
+    "resolution": "Unconfigured",
+    "attribution": "NASA",
+    "description": "No validated dust forecast or risk raster is configured.",
+    "url": "https://science.nasa.gov/mars/facts/"
+  },
+  {
+    "id": "curiosity-traverse",
+    "name": "Curiosity historical traverse",
+    "source": "NASA/JPL MMGIS",
+    "status": "available",
+    "coverage": "Gale Crater",
+    "crs": "Planetocentric latitude and east longitude",
+    "resolution": "Published drive track",
+    "attribution": "NASA/JPL-Caltech",
+    "description": "Bundled MMGIS linework snapshot with sampled sol waypoints.",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/location-map/"
+  }
+]
